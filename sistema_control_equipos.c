@@ -54,13 +54,13 @@ void imprimir_listado(void) {
     }
 
     printf("\n LISTADO DE EQUIPOS DISPONIBLES\n");
-    printf("==================================================================================\n");
+    printf("---------------------------------------------------------------------------------------------------\n");
     printf("| %-8s | %-18s | %-14s | %-19s | %-12s | %-10s |\n", 
            "Código", "Nombre", "Marca", "Responsable", "Estado", "Precio");
-    printf("==================================================================================\n");
+    printf("---------------------------------------------------------------------------------------------------\n");
 
     for (int i = 0; i < total_equipos; i++) {
-        printf("| %-8s | %-18s | %-14s | %-19s | %-12s | $%-9.2f |\n",
+        printf("| %-8s| %-18s | %-14s | %-19s | %-12s | $%-9.2f |\n",
                inventario[i].codigo,
                inventario[i].nombre,
                inventario[i].marca,
@@ -68,7 +68,7 @@ void imprimir_listado(void) {
                inventario[i].estado,
                inventario[i].precio);
     }
-    printf("==================================================================================\n");
+    printf("---------------------------------------------------------------------------------------------------\n");
 }
 
 void leer_cadena_obligatoria(const char *prompt, char *dest, size_t tam) {
@@ -359,7 +359,7 @@ int main(void) {
         printf("╠══════════════════════════════════════════════════════╣\n");
         printf("║  1. Registrar equipo                                 ║\n");
         printf("║  2. Mostrar equipos registrados                      ║\n");
-        printf("║  3. Buscar equipo por código                         \n");
+        printf("║  3. Buscar equipo por código                         ║\n");
         printf("║  4. Modificar información de equipo                  ║\n");
         printf("║  5. Eliminar equipo                                  ║\n");
         printf("║  6. Generar reporte en archivo de texto              ║\n");
