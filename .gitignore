@@ -1,0 +1,15 @@
+# Archivos compilados
+*.o
+*.out
+*.exe
+sistema_control_equipos
+
+# Archivos de datos generados por la aplicación (no versionar datos de usuario)
+equipos.dat
+reporte_equipos.txt
+
+# Carpetas de IDEs
+.vscode/
+.idea/
+*.swp
+*~
